@@ -7,11 +7,13 @@ provide('theme-color', 'pink')
 // 2、传递响应式数据
 const count = ref(100)
 provide('count', count)
-
+// 3、传递函数
+provide('changeCount', () => {
+    count.value++
+})
 </script>
 
 <template>
     <h1>我是顶层组件</h1>
-    <h2>testgithub</h2>
     <CenterCom></CenterCom>
 </template>
