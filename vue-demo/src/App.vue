@@ -12,5 +12,6 @@ provide('count', count)
 
 <template>
     <h1>我是顶层组件</h1>
+    <h2>testgithub</h2>
     <CenterCom></CenterCom>
 </template>
